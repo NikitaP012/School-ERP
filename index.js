@@ -45,7 +45,7 @@ const calculateDistance = (lat1, lon1, lat2, lon2) => {
 };
 
 // Add School API
-app.post('/', (req, res) => {
+app.post('/addSchool', (req, res) => {
     const { name, address, latitude, longitude } = req.body;
     console.log("req.body",req.body);
     
